@@ -18,3 +18,8 @@ View full Video ⬇︎
 
 
 #### Download and Build Sources ➤ [Beta Access Software Utility-master](https://github.com/chris1111/Beta-Access-Software-Utility/archive/master.zip) Then Run ➤ create_app.command
+
+Build Sources Video ⬇︎ 🤙
+
+[![Modular Image Creation](https://i.ibb.co/K5bFrB5/VIDEO.png)](https://www.insanelymac.com/forum/uploads/monthly_2020_12/Beta-Access-Software-Utility.mov.ebb6d86bfa1567ffa443adb68c7b6068.mov)
+
