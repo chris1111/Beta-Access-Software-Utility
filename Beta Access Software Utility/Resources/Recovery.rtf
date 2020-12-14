@@ -1,0 +1,376 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2576
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Verdana;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset0 Verdana-Bold;
+\f3\fnil\fcharset0 Verdana-Italic;}
+{\colortbl;\red255\green255\blue255;\red76\green78\blue78;\red0\green0\blue0;\red0\green22\blue176;
+\red68\green21\blue176;\red64\green128\blue0;\red108\green5\blue211;\red0\green0\blue255;}
+{\*\expandedcolortbl;;\csgenericrgb\c29999\c30457\c30457;\csgenericrgb\c0\c0\c0;\csgenericrgb\c0\c8656\c68986;
+\csgenericrgb\c26552\c8264\c69162;\csgenericrgb\c25000\c50001\c0;\csgenericrgb\c42337\c1841\c82833;\csgenericrgb\c0\c0\c100000;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li785\fi-786\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 \CocoaLigature0 # Applescript create by chris1111\cf3 \
+\cf2 # Beta Access Software Utility.app Copyright (c) 2020 chris1111 All rights reserved.
+\f1 \cf0 \CocoaLigature1 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li832\fi-833\pardirnatural\partightenfactor0
+
+\f2\b \cf4 \CocoaLigature0 display dialog
+\f0\b0 \cf3  "\
+Welcome Beta Access Software Utility\
+\
+Here are the choices that will be offered to you\
+(Default Update), (Public Access), (Developer Access)\
+\
+Quit to go out and make no choice.  \
+" \cf4 with icon\cf3  
+\f3\i \cf5 note
+\f0\i0 \cf3  \cf4 buttons\cf3  \{"Quit", "Continue"\} \cf4 default button\cf3  \{"Continue"\} \cf4 cancel button\cf3  \{"Quit"\}\
+
+\f2\b set
+\f0\b0  \cf6 theAction\cf3  
+\f2\b to
+\f0\b0  \cf5 button returned\cf3  
+\f2\b of
+\f0\b0  (
+\f2\b \cf4 display dialog
+\f0\b0 \cf3  "\
+Welcome Developer Beta Access Software\
+\
+Make a choice " \cf4 with icon\cf3  
+\f3\i \cf5 note
+\f0\i0 \cf3  \cf4 buttons\cf3  \{"Default Update", "Public Access", "Developer Access"\} \cf4 default button\cf3  \{"Developer Access"\})\
+\{"Default Update", "Public Access", "Developer Access"\}\
+
+\f2\b if
+\f0\b0  \cf6 theAction\cf3  = "Developer Access" 
+\f2\b then
+\f0\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf3 	
+\f2\b \cf4 do shell script
+\f0\b0 \cf3  "afplay '/System/Library/Components/CoreAudio.component/Contents/SharedSupport/SystemSounds/System/payment_success.aif' &> /dev/null &" 
+\f2\b with
+\f0\b0  \cf4 administrator privileges\cf3 \
+	
+\f2\b set
+\f0\b0  \cf7 progress description\cf3  
+\f2\b to
+\f0\b0  "\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li832\fi-833\pardirnatural\partightenfactor0
+\cf3 Developer Beta Access\
+======================================"\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf3 	\
+	
+\f2\b set
+\f0\b0  \cf7 progress total steps\cf3  
+\f2\b to
+\f0\b0  4\
+	\
+	
+\f2\b set
+\f0\b0  \cf7 progress additional description\cf3  
+\f2\b to
+\f0\b0  "System Analysing"\
+	
+\f2\b \cf8 delay
+\f0\b0 \cf3  0.9\
+	
+\f2\b set
+\f0\b0  \cf7 progress completed steps\cf3  
+\f2\b to
+\f0\b0  1\
+	\
+	
+\f2\b set
+\f0\b0  \cf7 progress additional description\cf3  
+\f2\b to
+\f0\b0  "Configuration software"\
+	
+\f2\b \cf8 delay
+\f0\b0 \cf3  0.8\
+	
+\f2\b set
+\f0\b0  \cf7 progress completed steps\cf3  
+\f2\b to
+\f0\b0  2\
+	\
+	
+\f2\b set
+\f0\b0  \cf7 progress additional description\cf3  
+\f2\b to
+\f0\b0  "Developer Beta Access activation"\
+	
+\f2\b \cf8 delay
+\f0\b0 \cf3  0.9\
+	
+\f2\b set
+\f0\b0  \cf7 progress completed steps\cf3  
+\f2\b to
+\f0\b0  3\
+	\
+	
+\f2\b set
+\f0\b0  \cf7 progress additional description\cf3  
+\f2\b to
+\f0\b0  "Open SoftwareUpdate prefPane"\
+	
+\f2\b \cf8 delay
+\f0\b0 \cf3  0.9\
+	
+\f2\b set
+\f0\b0  \cf7 progress completed steps\cf3  
+\f2\b to
+\f0\b0  4\
+	
+\f2\b \cf4 do shell script
+\f0\b0 \cf3  "afplay '/System/Library/Components/CoreAudio.component/Contents/SharedSupport/SystemSounds/accessibility/Sticky Keys MODIFER.aif' &> /dev/null &"\
+	
+\f2\b \cf8 delay
+\f0\b0 \cf3  1\
+	
+\f2\b \cf4 do shell script
+\f0\b0 \cf3  "/System/Library/PrivateFrameworks/Seeding.framework/Versions/A/Resources/seedutil enroll DeveloperSeed" 
+\f2\b with
+\f0\b0  \cf4 administrator privileges\cf3 \
+	
+\f2\b \cf4 do shell script
+\f0\b0 \cf3  "/usr/bin/open x-apple.systempreferences:com.apple.preferences.softwareupdate?client=bau"\
+	
+\f2\b \cf4 display alert
+\f0\b0 \cf3  "Developer Activate" \cf4 message\cf3  (\cf6 theAction\cf3  
+\f2\b as
+\f0\b0  
+\f3\i \cf8 text
+\f0\i0 \cf3 ) \cf4 buttons\cf3  "OK" \cf4 default button\cf3  "OK" \cf4 giving up after\cf3  6\
+	
+\f2\b \cf8 quit
+\f0\b0 \cf3 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li832\fi-833\pardirnatural\partightenfactor0
+
+\f2\b \cf3 else
+\f0\b0  
+\f2\b if
+\f0\b0  \cf6 theAction\cf3  = "Public Access" 
+\f2\b then
+\f0\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf3 	
+\f2\b \cf4 do shell script
+\f0\b0 \cf3  "afplay '/System/Library/Components/CoreAudio.component/Contents/SharedSupport/SystemSounds/System/payment_success.aif' &> /dev/null &" 
+\f2\b with
+\f0\b0  \cf4 administrator privileges\cf3 \
+	
+\f2\b set
+\f0\b0  \cf7 progress description\cf3  
+\f2\b to
+\f0\b0  "\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li832\fi-833\pardirnatural\partightenfactor0
+\cf3 Public Beta Access\
+======================================"\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf3 	\
+	
+\f2\b set
+\f0\b0  \cf7 progress total steps\cf3  
+\f2\b to
+\f0\b0  4\
+	\
+	
+\f2\b set
+\f0\b0  \cf7 progress additional description\cf3  
+\f2\b to
+\f0\b0  "System Analysing"\
+	
+\f2\b \cf8 delay
+\f0\b0 \cf3  0.9\
+	
+\f2\b set
+\f0\b0  \cf7 progress completed steps\cf3  
+\f2\b to
+\f0\b0  1\
+	\
+	
+\f2\b set
+\f0\b0  \cf7 progress additional description\cf3  
+\f2\b to
+\f0\b0  "Configuration software"\
+	
+\f2\b \cf8 delay
+\f0\b0 \cf3  0.8\
+	
+\f2\b set
+\f0\b0  \cf7 progress completed steps\cf3  
+\f2\b to
+\f0\b0  2\
+	\
+	
+\f2\b set
+\f0\b0  \cf7 progress additional description\cf3  
+\f2\b to
+\f0\b0  "Public Beta Access activation"\
+	
+\f2\b \cf8 delay
+\f0\b0 \cf3  0.9\
+	
+\f2\b set
+\f0\b0  \cf7 progress completed steps\cf3  
+\f2\b to
+\f0\b0  3\
+	\
+	
+\f2\b set
+\f0\b0  \cf7 progress additional description\cf3  
+\f2\b to
+\f0\b0  "Open SoftwareUpdate prefPane"\
+	
+\f2\b \cf8 delay
+\f0\b0 \cf3  0.9\
+	
+\f2\b set
+\f0\b0  \cf7 progress completed steps\cf3  
+\f2\b to
+\f0\b0  4\
+	
+\f2\b \cf4 do shell script
+\f0\b0 \cf3  "afplay '/System/Library/Components/CoreAudio.component/Contents/SharedSupport/SystemSounds/accessibility/Sticky Keys MODIFER.aif' &> /dev/null &"\
+	
+\f2\b \cf8 delay
+\f0\b0 \cf3  1\
+	
+\f2\b \cf4 do shell script
+\f0\b0 \cf3  "/System/Library/PrivateFrameworks/Seeding.framework/Versions/A/Resources/seedutil enroll PublicSeed" 
+\f2\b with
+\f0\b0  \cf4 administrator privileges\cf3 \
+	
+\f2\b \cf4 do shell script
+\f0\b0 \cf3  "/usr/bin/open x-apple.systempreferences:com.apple.preferences.softwareupdate?client=bau"\
+	
+\f2\b \cf4 display alert
+\f0\b0 \cf3  "Public Beta Activate" \cf4 message\cf3  (\cf6 theAction\cf3  
+\f2\b as
+\f0\b0  
+\f3\i \cf8 text
+\f0\i0 \cf3 ) \cf4 buttons\cf3  "OK" \cf4 default button\cf3  "OK" \cf4 giving up after\cf3  6\
+	
+\f2\b \cf8 quit
+\f0\b0 \cf3 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li832\fi-833\pardirnatural\partightenfactor0
+
+\f2\b \cf3 end
+\f0\b0  
+\f2\b if
+\f0\b0 \
+
+\f2\b if
+\f0\b0  \cf6 theAction\cf3  = "Default Update" 
+\f2\b then
+\f0\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf3 	
+\f2\b \cf4 do shell script
+\f0\b0 \cf3  "afplay '/System/Library/Components/CoreAudio.component/Contents/SharedSupport/SystemSounds/System/payment_success.aif' &> /dev/null &" 
+\f2\b with
+\f0\b0  \cf4 administrator privileges\cf3 \
+	
+\f2\b set
+\f0\b0  \cf7 progress description\cf3  
+\f2\b to
+\f0\b0  "\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li832\fi-833\pardirnatural\partightenfactor0
+\cf3 Default Update\
+======================================"\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf3 	\
+	
+\f2\b set
+\f0\b0  \cf7 progress total steps\cf3  
+\f2\b to
+\f0\b0  4\
+	\
+	
+\f2\b set
+\f0\b0  \cf7 progress additional description\cf3  
+\f2\b to
+\f0\b0  "System Analysing"\
+	
+\f2\b \cf8 delay
+\f0\b0 \cf3  0.9\
+	
+\f2\b set
+\f0\b0  \cf7 progress completed steps\cf3  
+\f2\b to
+\f0\b0  1\
+	\
+	
+\f2\b set
+\f0\b0  \cf7 progress additional description\cf3  
+\f2\b to
+\f0\b0  "Configuration software"\
+	
+\f2\b \cf8 delay
+\f0\b0 \cf3  0.8\
+	
+\f2\b set
+\f0\b0  \cf7 progress completed steps\cf3  
+\f2\b to
+\f0\b0  2\
+	\
+	
+\f2\b set
+\f0\b0  \cf7 progress additional description\cf3  
+\f2\b to
+\f0\b0  "Default Update activation"\
+	
+\f2\b \cf8 delay
+\f0\b0 \cf3  0.9\
+	
+\f2\b set
+\f0\b0  \cf7 progress completed steps\cf3  
+\f2\b to
+\f0\b0  3\
+	\
+	
+\f2\b set
+\f0\b0  \cf7 progress additional description\cf3  
+\f2\b to
+\f0\b0  "Open SoftwareUpdate prefPane"\
+	
+\f2\b \cf8 delay
+\f0\b0 \cf3  0.9\
+	
+\f2\b set
+\f0\b0  \cf7 progress completed steps\cf3  
+\f2\b to
+\f0\b0  4\
+	
+\f2\b \cf4 do shell script
+\f0\b0 \cf3  "afplay '/System/Library/Components/CoreAudio.component/Contents/SharedSupport/SystemSounds/accessibility/Sticky Keys MODIFER.aif' &> /dev/null &"\
+	
+\f2\b \cf8 delay
+\f0\b0 \cf3  1\
+	
+\f2\b \cf4 do shell script
+\f0\b0 \cf3  "sudo /System/Library/PrivateFrameworks/Seeding.framework/Versions/A/Resources/seedutil unenroll" 
+\f2\b with
+\f0\b0  \cf4 administrator privileges\cf3 \
+	
+\f2\b \cf4 do shell script
+\f0\b0 \cf3  "/usr/bin/open x-apple.systempreferences:com.apple.preferences.softwareupdate?client=bau"\
+	
+\f2\b \cf4 display alert
+\f0\b0 \cf3  "Default Update Activate" \cf4 message\cf3  (\cf6 theAction\cf3  
+\f2\b as
+\f0\b0  
+\f3\i \cf8 text
+\f0\i0 \cf3 ) \cf4 buttons\cf3  "OK" \cf4 default button\cf3  "OK" \cf4 giving up after\cf3  6\
+	
+\f2\b \cf8 quit
+\f0\b0 \cf3 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li832\fi-833\pardirnatural\partightenfactor0
+
+\f2\b \cf3 end
+\f0\b0  
+\f2\b if
+\f0\b0 \
+\
+}
