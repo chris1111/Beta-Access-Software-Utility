@@ -21,5 +21,5 @@ View full Video ⬇︎
 
 Build Sources Video ⬇︎ 🤙
 
-[![Modular Image Creation](https://i.ibb.co/K5bFrB5/VIDEO.png)](https://www.insanelymac.com/forum/uploads/monthly_2020_12/Beta-Access-Software-Utility.mov.ebb6d86bfa1567ffa443adb68c7b6068.mov)
+[![Modular Image Creation](https://i.ibb.co/K5bFrB5/VIDEO.png)](https://vimeo.com/490872550)
 
