@@ -7,7 +7,7 @@ Note|Description
 :----|:----
 Beta Access Software Utility|Working from macOS Mojave 10.14 to macOS 11 Big Sur
  
- Gatekeeper ans SIP security must be disable before using this app.
+- [x] Gatekeeper ans SIP security must be disable before using this app.
 - to enroll in the Beta Software program from Apple. You will have the following choices:
 (Default Update) (Public Access) (Developer Access)
 The program is very useful because it allows you to come back
