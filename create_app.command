@@ -1,6 +1,5 @@
-
 # Beta Access Software Utility
-# (c) Copyright 2020 chris1111 
+# (c) Copyright 2020, 2023 chris1111 
 # This will create a Apple Bundle App Beta Access Software Utility
 # Dependencies: osacompile
 PARENTDIR=$(dirname "$0")
@@ -11,7 +10,6 @@ SOURCE_SCRIPT="Beta Access Software Utility"/Resources/"Beta Access Software Uti
 echo "= = = = = = = = = = = = = = = = = = = = = = = = =  "
 echo "Beta Access Software Utility"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = =  "
-
 # see if the app is already in Desktop
 if [ -d "${3}./Beta Access Software Utility.app" ]; then
 	rm -rf "${3}./Beta Access Software Utility.app"
@@ -30,8 +28,15 @@ cp -rp ./"Beta Access Software Utility"/Resources/description.rtfd "$APP_NAME"/C
 cp -rp ./"Beta Access Software Utility"/Resources/applet.rsrc "$APP_NAME"/Contents/Resources
 cp -r ./"Beta Access Software Utility"/Resources/Recovery.rtf "$APP_NAME"/Contents/Resources/Scripts
 
-# Change icons
-./"Beta Access Software Utility"/Resources/icon.py ./"Beta Access Software Utility"/Resources/applet.icns ./"Beta Access Software Utility.app"
+# Set icons Zip app
+Sleep 1
+zip -r "$APP_NAME".zip "$APP_NAME"
+Sleep 1
+rm -rf "$APP_NAME"
+unzip "$APP_NAME".zip
+Sleep 1
+rm -rf "$APP_NAME".zip
+echo " "
 
 echo " = = = = = = = = = = = = = = = = = = = = = = = = = 
 Beta Access Software Utility.app completed
