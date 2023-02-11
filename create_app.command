@@ -23,6 +23,9 @@ Sleep 2
 # Copy Resources to the right place
 Sleep 1
 cp -Rp ./"Beta Access Software Utility"/Contents "$APP_NAME"
+Sleep 1
+rm -rf "$APP_NAME"/Contents/MacOS/applet
+rm -rf "$APP_NAME"/Contents/Resources/Scripts/"Beta Access Software Utility.scpt"
 
 
 # Set icons Zip app
