@@ -6,7 +6,7 @@ PARENTDIR=$(dirname "$0")
 cd "$PARENTDIR"
 # Declare some VARS
 APP_NAME="Beta Access Software Utility.app"
-SOURCE_SCRIPT="Beta Access Software Utility"/Resources/"Beta Access Software Utility.applescript"
+SOURCE_SCRIPT="Beta Access Software Utility"/Contents/Resources/Scripts/"Beta Access Software Utility.scpt"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = =  "
 echo "Beta Access Software Utility"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = =  "
@@ -21,12 +21,12 @@ Sleep 2
 /usr/bin/osacompile -o "$APP_NAME" "$SOURCE_SCRIPT"
 
 # Copy Resources to the right place
-cp -rp ./"Beta Access Software Utility"/Resources/applet.icns "$APP_NAME"/Contents/Resources
-cp -r ./"Beta Access Software Utility"/Resources/Credits.html "$APP_NAME"/Contents/Resources
-cp -rp ./"Beta Access Software Utility"/Resources/Info.plist "$APP_NAME"/Contents
-cp -rp ./"Beta Access Software Utility"/Resources/description.rtfd "$APP_NAME"/Contents/Resources
-cp -rp ./"Beta Access Software Utility"/Resources/applet.rsrc "$APP_NAME"/Contents/Resources
-cp -r ./"Beta Access Software Utility"/Resources/Recovery.rtf "$APP_NAME"/Contents/Resources/Scripts
+Sleep 1
+cp -Rp ./"Beta Access Software Utility"/Contents "$APP_NAME"
+Sleep 1
+rm -rf "$APP_NAME"/Contents/MacOS/applet
+rm -rf "$APP_NAME"/Contents/Resources/Scripts/"Beta Access Software Utility.scpt"
+
 
 # Set icons Zip app
 Sleep 1
