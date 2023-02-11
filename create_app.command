@@ -6,7 +6,7 @@ PARENTDIR=$(dirname "$0")
 cd "$PARENTDIR"
 # Declare some VARS
 APP_NAME="Beta Access Software Utility.app"
-SOURCE_SCRIPT="Beta Access Software Utility"/Contents/Resources/Scripts/"Beta Access Software Utility.applescript"
+SOURCE_SCRIPT="Beta Access Software Utility"/Contents/Resources/Scripts/"Beta Access Software Utility.scpt"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = =  "
 echo "Beta Access Software Utility"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = =  "
