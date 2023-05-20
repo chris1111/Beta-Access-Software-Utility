@@ -8,7 +8,9 @@ Note|Description
 Beta Access Software Utility|Working from macOS Mojave 10.14 to macOS Ventura 13
  
 - [x] Gatekeeper ans SIP security must be disable before using this app.
-- to enroll in the Beta Software program from Apple. You will have the following choices:
+- Program to enroll in the Beta Software program from Apple. 
+
+You will have the following choices: ⬇︎
 
 
 
@@ -17,8 +19,8 @@ Enroll|
 `Default Update`--`Public Access`--`Developer Access`
 
 
-The program is very useful because it allows you to come back
-to Default updates with the choice (Default Update).
+You can roll back to Default updates with the choice
+(Default Update)
 
 View full Video ⬇︎
 
