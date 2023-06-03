@@ -9,6 +9,7 @@ Beta Access Software Utility|Working from macOS Mojave 10.14 to macOS Ventura 13
  
 - [x] Gatekeeper ans SIP security must be disable before using this app.
 - Program to enroll in the Beta Software program from Apple. 
+- No longer works after macOS Ventura 13.3 `(During the 13.4 beta cycle it was announced seedutil is deprecated)`
 
 You will have the following choices: ⬇︎
 
